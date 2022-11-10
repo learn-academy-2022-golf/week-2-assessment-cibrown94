@@ -111,8 +111,8 @@ describe("randomNouns", () => {
 //     return array(array.toUpperCase())
 // })
 
-const randomNouns = (array) => {
-    array.map((array) => {
+const randomNouns = (array) => { 
+  array.map((array) => {
         return array(array())
    })
   }
@@ -133,6 +133,8 @@ const randomNouns = (array) => {
 // //   })
 // // }
 // // // logging the function and pass in the array
+//
+
 
 // I am getting lost in the function itself.
 
@@ -211,6 +213,7 @@ const randomNouns = (array) => {
 //   }
 // }
 // }
+
 
 
 //   const string = (vowel) => {
