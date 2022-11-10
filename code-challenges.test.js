@@ -102,8 +102,8 @@ describe("randomNouns", () => {
     it("an array with all the words capitalized", () => {
         const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
         const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
-      expect(randomNouns(randomNouns1)).toUpperCase("STREETLAMP", "POTATO", "TEETH", "CONCLUSION", "NEPHEW")
-      expect(randomNouns(randomNouns2)).toUpperCase("TEMPERATURE", "DATABASE", "CHOPSTICKS", "MANGO")
+      expect(randomNouns(randomNouns1)).toEqual(["STREETLAMP", "POTATO", "TEETH", "CONCLUSION", "NEPHEW"])
+      expect(randomNouns(randomNouns2)).toEqual(["TEMPERATURE", "DATABASE", "CHOPSTICKS", "MANGO"])
     })
   })
 
@@ -112,8 +112,8 @@ describe("randomNouns", () => {
 // })
 
 const randomNouns = (array) => { 
-  array.map((array) => {
-        return array(array())
+  return array.map((value) => {
+    return value.toUpperCase()
    })
   }
 
@@ -189,31 +189,34 @@ const randomNouns = (array) => {
 // // // b) Create the function that makes the test pass.
 
 
-// describe("vowel", () => {
-//     it("logs the index of the first vowel", () => {
-//         const vowelTester1 = "learn"
-//         const vowelTester2 = "academy"
-//         const vowelTester3 = "challenges"
-//       expect(vowel(vowelTester1)).indexOf("1") 
-//       expect(vowel(vowelTester2)).indexOf("0")
-//       expect(vowel(vowelTester3)).indexOf("2")
-//     })
-//   })
+describe("vowel", () => {
+    it("logs the index of the first vowel", () => {
+        const vowelTester1 = "learn"
+        const vowelTester2 = "academy"
+        const vowelTester3 = "challenges"
+      expect(vowel(vowelTester1)).indexOf("1") 
+      expect(vowel(vowelTester2)).indexOf("0")
+      expect(vowel(vowelTester3)).indexOf("2")
+    })
+  })
 
 // //   ReferenceError: vowel is not defined
 
-// const vowel =(string) =>{
-//     // return string.indexOf("learn"[1])
-//     let count = 0
-// for(let i = 0; i < string.length; i++) {
-//   if(string[i] === "a","e","i","o","u") {
-//     count++
-//   } return {[i]string
 
-//   }
-// }
-// }
 
+const vowel =(string) =>{
+    // return string.indexOf("learn"[1])
+    let count = 0
+for(let i = 0; i < string.length; i++)
+ {
+  if(string[i] === "a","e","i","o","u") {
+  } return ([i])
+
+  }
+}
+
+// Create a function that takes in a string that returns the placement of the first vowel. 
+// Create a 
 
 
 //   const string = (vowel) => {
