@@ -16,7 +16,7 @@ Researched answer: A Parameter is a placeholder for the data being passed throug
 
 Your answer: The built in method.map will take an individual data set, an array. It takes the same 3 arguements like .forEach. It was always return as a new array, of the same length as the original array. It will do something about each item in the item. A return is required when using a the .map method. 
 
-Researched answer: ____________
+Researched answer: The .map built in method takes in 3 parameters are arguements, in one individual data set. It takes the same 3 arguements are .forEach but its reutrn a new array. [value, index, array] Index and Array are optional components in the data set. 
 
 3. What is the difference between map and filter?
 

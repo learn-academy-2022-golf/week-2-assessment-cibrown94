@@ -110,9 +110,13 @@ describe("randomNouns", () => {
 //   const randomNouns = array.map ((array) => {
 //     return array(array.toUpperCase())
 // })
-
+// Creating a function that takes in an array 
+// 
 const randomNouns = (array) => { 
+  // Using the .map built in method, to access the value of the array, return everything
+
   return array.map((value) => {
+    // Call upon the value of the array to make it uppercase with the .toUpperCase
     return value.toUpperCase()
    })
   }
